@@ -40,7 +40,7 @@ for vec in list(itertools.product(range(3), repeat=16))[::-1]:
     #if count > 1000:
         #break
 
-with open("results.txt", "w") as f:
+with open("AAAAresults.txt", "w") as f:
     f.write("\n".join(sorted(k4_functions)))
 
 print("# functions: ", len(k4_functions))
