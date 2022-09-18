@@ -5,7 +5,7 @@ import copy
 sys.setrecursionlimit(100000)
 
 functions = []
-with open('results.txt', 'r') as f:
+with open('AAAAresults.txt', 'r') as f:
     functions = [tuple([int(x) for x in line.strip()[1:-1].split(',')]) for line in f.readlines()]
 
 new_f = []
