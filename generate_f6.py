@@ -62,13 +62,13 @@ for vec in list(itertools.product(range(3), repeat=40))[::-1]:
         function = function & (v | ~v)
     #print(function)
     #print(expr2truthtable(function))
-    k4_functions.add(str(tuple(map(lambda x: x-1, list(expr2truthtable(function).pcdata)))))
+    k6_functions.add(str(tuple(map(lambda x: x-1, list(expr2truthtable(function).pcdata)))))
     count += 1
     #print(count)
     #if count > 1000:
         #break
 
 with open("results_6.txt", "w") as f:
-    f.write("\n".join(sorted(k4_functions)))
+    f.write("\n".join(sorted(k6_functions)))
 
-print("# functions: ", len(k4_functions))
+print("# functions: ", len(k6_functions))
