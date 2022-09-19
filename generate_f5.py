@@ -58,7 +58,7 @@ for vec in list(itertools.product(range(3), repeat=24))[::-1]:
     #if count > 1000:
         #break
 
-with open("results_5.txt", "w") as f:
+with open("results_5_konf.txt", "w") as f:
     f.write("\n".join(sorted(k5_functions)))
 
 print("# functions: ", len(k5_functions))
