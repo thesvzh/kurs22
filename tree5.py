@@ -37,7 +37,7 @@ def count_new(m, n, k):
         print(max(z),z.index(max(z)))
     #return z       
     
-d = [6545]
+d = [len(functions)]
 
 count_new (0,d[0],0)
 
