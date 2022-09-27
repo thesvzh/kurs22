@@ -8,14 +8,12 @@ functions = []
 with open('results_4.txt', 'r') as f:
     functions = [tuple([int(x) for x in line.strip()[1:-1].split(',')]) for line in f.readlines()]
 
-new_f = []
-
 def count_new(m, n, k):
     summa = 0
     count0 = 0
     count1 = 0
     if (k == 15):
-        print(count0,"-", k, "-", count1)
+        print(count0, "-", k, "-", count1)
     else :
         for i in range(m, n):
             a = functions[i][k]
@@ -26,18 +24,15 @@ def count_new(m, n, k):
         k +=1
         if count0 >= count1 :
             
-            count_new (m, count0+m, k)
+            count_new (m, count0 + m, k)
             #print (m, n, k)
         else:
             
-            count_new (m+count0, n, k)
+            count_new (m + count0, n, k)
             #print (m, n, k)
     z = [count0, count1]
     if max(z) != 0:
-        print(max(z),z.index(max(z)))
+        print( max(z), z.index( max(z) ) )
     #return z       
     
-d = [6545]
-
-count_new (0,d[0],0)
-
+count_new (0, len(functions), 0)
