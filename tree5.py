@@ -13,7 +13,7 @@ def count_new(m, n, k):
     summa = 0
     count0 = 0
     count1 = 0
-    if (k == 31):
+    if (k == 30):
         print(count0, "-", k, "-", count1)
     else :
         for i in range(m, n):
